@@ -48,7 +48,7 @@ enum preonic_keycodes {
 
 #define L2_ESC LT(2,KC_ESC)
 #define SHFT_BSP LSFT_T(KC_BSPC)
-#define SHFT_SPC LSFT_T(KC_SPC)
+#define SHFT_SPC RSFT_T(KC_SPC)
 #define L1_ENT LT(1,KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
