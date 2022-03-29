@@ -35,6 +35,7 @@ enum preonic_keycodes {
   BACKLIT
 };
 
+// Home Row
 #define GUI_A LGUI_T(KC_A)
 #define ALT_S LALT_T(KC_S)
 #define CTL_D LCTL_T(KC_D)
@@ -46,6 +47,7 @@ enum preonic_keycodes {
 #define ALT_L LALT_T(KC_L)
 #define GUI_SCLN RGUI_T(KC_SCLN)
 
+// Thumbs
 #define L2_ESC LT(2,KC_ESC)
 #define SHFT_BSP LSFT_T(KC_BSPC)
 #define SHFT_SPC RSFT_T(KC_SPC)
@@ -222,4 +224,46 @@ bool music_mask_user(uint16_t keycode) {
     default:
       return true;
   }
+}
+
+// bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+//     switch (keycode) {
+//         case GUI_A:
+//             return true;
+//         case ALT_S:
+//             return true;
+//         case CTL_D:
+//             return true;
+//         case SHFT_F:
+//             return true;
+//         case L2_G:
+//             return true;
+//         case L2_H:
+//             return true;
+//         case SHFT_J:
+//             return true;
+//         case CTL_K:
+//             return true;
+//         case ALT_L:
+//             return true;
+//         case GUI_SCLN:
+//             return true;
+//         case L2_ESC:
+//             return true;
+//         case SHFT_SPC:
+//             return true;
+//         case L1_ENT:
+//             return true;
+//         default:
+//             return false;
+//     }
+// }
+
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case SHFT_BSP:
+            return false;
+        default:
+            return true;
+    }
 }
