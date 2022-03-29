@@ -44,9 +44,10 @@
 */
 //#define MIDI_ADVANCED
 
-/* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */z
+/* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
 //#define MIDI_TONE_KEYCODE_OCTAVES 2
 
 #define TAPPING_TERM 200
-
 #define IGNORE_MOD_TAP_INTERRUPT
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD_PER_KEY
