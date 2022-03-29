@@ -41,10 +41,10 @@ enum preonic_keycodes {
 #define SHFT_F LSFT_T(KC_F)
 #define L2_G LT(2,KC_G)
 #define L2_H LT(2,KC_H)
-#define SHFT_J LSFT_T(KC_J)
-#define CTL_K LCTL_T(KC_K)
+#define SHFT_J RSFT_T(KC_J)
+#define CTL_K RCTL_T(KC_K)
 #define ALT_L LALT_T(KC_L)
-#define GUI_SCLN LGUI_T(KC_SCLN)
+#define GUI_SCLN RGUI_T(KC_SCLN)
 
 #define L2_ESC LT(2,KC_ESC)
 #define SHFT_BSP LSFT_T(KC_BSPC)
